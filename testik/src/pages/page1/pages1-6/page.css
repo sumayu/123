@@ -1,0 +1,345 @@
+@font-face { 
+    font-family: "Anonymous Pro"; 
+    src: url(fonts/AnonymousPro-Regular.ttf); 
+    font-weight: 400; 
+    font-style: normal; 
+    display: swap; 
+} 
+ 
+@font-face { 
+    font-family: "Anonymous Pro"; 
+    src: url(fonts/AnonymousPro-Bold.ttf); 
+    font-weight: 700; 
+    font-style: normal; 
+    display: swap; 
+} 
+ 
+* { 
+    box-sizing: border-box; 
+} 
+.scrollable-container {
+    height: 100vh; /* высота контейнера должна быть 100% высоты окна просмотра */
+    overflow-y: scroll; /* добавляем вертикальную прокрутку, если контент превысил высоту контейнера */
+  }
+  
+/* сброс стилей по умолчанию */ 
+body,h1,h2,h3,p,ul,li { 
+    margin: 0; 
+} 
+ul { 
+    list-style: none; 
+    padding: 0; 
+} 
+a { 
+    text-decoration: none; 
+} 
+ 
+/* задание шрифта всей странице */ 
+body { 
+    font-family: "Anonymous Pro", sans-serif; 
+} 
+ 
+/* стили для главного контейнера */ 
+main { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: #F1F1F1; 
+} 
+ 
+/* стили для хедера(шапки) сайта */ 
+header { 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    border-bottom: 1px solid #A1A6B4; 
+    background: white; 
+    font-family: "Anonymous Pro", sans-serif; 
+} 
+ 
+.header-container { 
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 1140px; 
+    margin: 24px 0 24px; 
+} 
+ 
+.logo-link { 
+    max-width: 215px; 
+} 
+ 
+/* стили для ссылок в хедере и футере */ 
+nav { 
+    display: flex; 
+} 
+ 
+.nav-list { 
+    display: flex; 
+    align-items: center; 
+    width: 100%; 
+    gap: 24px; 
+} 
+ 
+.nav-item { 
+    display: inline; 
+} 
+ 
+.nav-link { 
+    color: #121723; 
+    font-size: 20px; 
+    font-weight: 700; 
+} 
+ 
+/* стили для  */ 
+.content { 
+    margin: 32px 0; 
+    max-width: 1140px; 
+} 
+ 
+h1 { 
+    font-size: 48px; 
+} 
+ 
+/* стили для контейнера кроссовок */ 
+.sneakers { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 24px; 
+    margin: 32px 0 0; 
+} 
+ 
+/* стили для карточки кроссовок */ 
+.sneaker { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 364px; 
+    height: 100%; 
+    border-radius: 12px; 
+    background: white;  
+} 
+.sneaker:hover { 
+    animation-name: drop; 
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+@keyframes drop { 
+    from { 
+        margin-top: 10%; 
+    } 
+ 
+    to { 
+        margin-top: 0; 
+    } 
+} 
+.sneaker-image { 
+    width: 100%; 
+} 
+ 
+.sneaker-info { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px; 
+    width: 100%; 
+    padding: 32px 24px; 
+} 
+ 
+h3 { 
+    font-size: 26px; 
+    color: #121723; 
+} 
+ 
+p { 
+    font-size: 20px; 
+    color: #121723; 
+} 
+ 
+footer { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: #121723; 
+} 
+ 
+/* стили для футера */ 
+.footer-content { 
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 1140px; 
+    margin: 32px 0; 
+} 
+ 
+.footer__logo-link { 
+    max-width: 300px; 
+    width: 100%; 
+} 
+ 
+footer .nav-link { 
+    color: white; 
+} 
+ 
+.copyright { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    max-width: 1140px; 
+    border-top: 1px solid #A1A6B4; 
+} 
+ 
+.copyright-text { 
+    color: #A1A6B4; 
+    font-size: 16px; 
+    font-weight: 700; 
+    margin: 24px 0; 
+} 
+.bigcontentgg { 
+    margin: 0px 10.5% 0 10%; 
+    bottom: 0px; 
+    background-color: #ffffff; 
+    white-space: nowrap;  
+     
+ 
+} 
+.contentbiggg { 
+    width: 50% ; 
+    white-space: wrap; 
+    justify-content: space-between; 
+} 
+h2 { 
+    font-size: 48px; 
+    white-space: nowrap; 
+} 
+.biglinegg { 
+    height: 1px; 
+    width: 0; 
+    background-color: #121723; 
+} 
+.bigtextgg { 
+   white-space: wrap; 
+   width: 50%; 
+  display: inline-block; 
+} 
+.contentbiggg2 { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+ 
+} 
+.contentbiggg1 { 
+display: flex; 
+flex-direction: column; 
+justify-content: space-between; 
+margin-bottom: -13%; 
+ 
+} 
+.ooo { 
+    justify-content: space-between; 
+    width: 50px; 
+    margin-left: 70%; 
+margin-top: -490px; 
+margin-bottom: 460px; 
+} 
+.biglinegg { 
+    border-top: 2px; 
+    color: black; 
+    width: 350px; 
+    margin-top: 20px; 
+    width: 300px; 
+} 
+.oo { 
+    font-size: 20px; 
+} 
+main {font-family: "Anonymous Pro", sans-serif;} 
+.main {font-family: "Anonymous Pro", sans-serif;} 
+@media screen and (max-width: 376px) { 
+     
+ 
+    .snimg{ 
+        align-items: center; 
+        width: 100%; 
+     
+max-width: 100%} 
+.sneakerbig1 { 
+        width: 100% ; 
+        height: 175px    ; 
+        object-position: center; 
+        object-fit: cover; 
+        align-items: center; 
+ 
+        display: flex; 
+        margin-top: 25px; 
+} 
+h2 { 
+   white-space: wrap; 
+   font-size: 30px; 
+   margin-top: 10px; 
+   display: flex; 
+   align-items: center  ; 
+   width: 100%; 
+    
+} 
+body { 
+white-space: wrap; 
+width: 100%; 
+max-width: 375px; 
+} 
+.ooo { 
+    margin-bottom: 15%; 
+    margin-left: 0; 
+    margin-top: 5px; 
+} 
+.footer { 
+    margin-top: 0px; 
+} 
+.bigtextgg { 
+    width: 100%; 
+    white-space: wrap; 
+} 
+.bigtextgg2 { 
+    width: 100%; 
+white-space: wrap; 
+} 
+.nav-list { 
+    margin-top: 70px; 
+    margin-left: -280px; 
+    margin-bottom: 10px; 
+} 
+.logo-link{ 
+    margin-left: 77px; 
+} 
+.footer__logo-link{ 
+    margin-right: -100px; 
+    margin-left: 40px; 
+} 
+.snimg2 { 
+    align-items: center; 
+    margin-bottom: 20px; 
+    margin-top: 0px; 
+    width: 100%; 
+} 
+.texth2 { 
+    margin-top: 20px; 
+} 
+.snimg3 { 
+    margin-top: 45px; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 30px; 
+} 
+h3 { 
+    white-space: wrap; 
+} 
+h4 { 
+    width: 100%; 
+} 
+.oo { 
+    font-size: 15px; 
+} 
+}
